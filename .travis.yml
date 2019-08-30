@@ -1,5 +1,7 @@
 language: python
 jdk: openjdk8
+dist: xenial
+sudo: false
 python:
   - 3.7
 before_install:
@@ -10,7 +12,6 @@ before_install:
   - export SPARK_HOME=/opt/spark-2.4.3-bin-hadoop2.7
   - export PATH=$PATH:/opt/spark-2.4.3-bin-hadoop2.7/bin
   - python --version
-  - pip install pytest-spark
   - pip install pytest-cov
   - pip install codecov
 install:
