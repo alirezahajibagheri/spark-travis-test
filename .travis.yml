@@ -3,7 +3,7 @@ jdk: openjdk8
 dist: xenial
 sudo: false
 python:
-  - 3.7
+  - 3.6
 before_install:
   - mkdir -p /opt
   - wget -q -O /opt/spark.tgz http://www.gtlib.gatech.edu/pub/apache/spark/spark-2.4.3/spark-2.4.3-bin-hadoop2.7.tgz
