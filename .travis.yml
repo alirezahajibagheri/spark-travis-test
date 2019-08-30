@@ -13,9 +13,13 @@ before_install:
   - rm /opt/spark.tgz
   - export SPARK_HOME=/opt/spark-2.4.3-bin-hadoop2.7
   - export PATH=$PATH:/opt/spark-2.4.3-bin-hadoop2.7/bin
+  - python --version
+  - pip install -U pip
+  - pip install -U pytest
+  - pip install codecov
 install:
   - pip install -r requirements.txt
 script:
   - pytest
 after_success:
-  - codecov 
+  - codecov
