@@ -1,6 +1,6 @@
 import pyspark
 import pytest
-import unittest
+
 
 def test_spark_session_dataframe(spark_session):
     test_df = spark_session.createDataFrame([[1, 3], [2, 4]], "a: int, b: int")

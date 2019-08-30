@@ -1,6 +1,6 @@
 language: python
 jdk: openjdk8
-dist: xenial
+dist: trusty
 sudo: false
 python:
   - 3.6
